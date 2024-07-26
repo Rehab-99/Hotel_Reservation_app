@@ -47,7 +47,7 @@ class RoomController extends Controller
         $all_rooms=Room::where('roomType_id',$id)->get();
 
         return response()->json([
-            'status'=>201,
+            'status'=>200,
             'message'=>' All Rooms of this type',
             'data'=>['All Rooms'=>$all_rooms],
         ]);
